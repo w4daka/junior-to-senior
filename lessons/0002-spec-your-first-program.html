@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>0002 — Spec your first program</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<main>
+<nav class="crumb"><a href="0001-tactical-vs-strategic.html">0001</a> · Lesson 0002 · <a href="../reference/0002-mini-spec-template.html">Template</a> · <a href="../MISSION.md">Mission</a></nav>
+<h1>Spec your first program</h1>
+<p class="subtitle">Turn "I want a game" into 5 lines AI can build. 15 min.</p>
+
+<h2>Knowledge (3 min)</h2>
+<p>You already beat tactics: <code>first.js</code> runs. Strategy = decide <em>what</em> before AI writes <em>how</em>. A mini-spec has 5 lines: goal, input, output, one rule, not-doing.</p>
+<figure>
+<p><strong>Example — guess game:</strong><br>
+Goal: guess 1–10. Input: one number. Output: "too high / low / won". Rule: 3 tries max. Not-doing: no scores, no UI.</p>
+<figcaption>Pattern from <a href="https://spec-coding.dev/blog/how-to-write-technical-spec-template-guide">7-section spec guide</a>, shrunk to hobbyist size. Full chain <a href="https://cc.bruniaux.com/guide/workflows/spec-first">intent → spec → plan</a>.</figcaption>
+</figure>
+
+<h2>Retrieval check (2 min)</h2>
+<div class="quiz" data-answer="c" data-why="a spec lists the rule and the boundary.">
+<p><strong>Q1. Which line makes a spec buildable?</strong></p>
+<button data-opt="a">Make the game fun daily</button>
+<button data-opt="b">Add cool features later</button>
+<button data-opt="c">Three tries, 1 to 10 only</button>
+<p class="fb" aria-live="polite"></p>
+</div>
+
+<h2>Skill task (8 min)</h2>
+<div class="task">
+<ol>
+<li>Pick one: calculator, todo list, guess game.</li>
+<li>Copy the <a href="../reference/0002-mini-spec-template.html">5-line template</a> into <code>spec.txt</code>.</li>
+<li>Fill it. Paste it here — that spec drives Lesson 0003 where AI builds it and you verify.</li>
+</ol>
+Win: one <code>spec.txt</code> an agent can implement with zero questions.
+</div>
+
+<p class="source"><strong>Primary source:</strong> <a href="https://spec-coding.dev/blog/how-to-write-technical-spec-template-guide">How to Write a Technical Spec</a>. See also <a href="../lessons/0001-tactical-vs-strategic.html">Lesson 0001</a>, <a href="../RESOURCES.md">RESOURCES.md</a>.</p>
+<p class="ask">Stuck? Ask your agent-teacher a follow-up — e.g. "Is my rule tight enough?"</p>
+</main>
+<script src="../assets/quiz.js"></script>
+</body>
+</html>

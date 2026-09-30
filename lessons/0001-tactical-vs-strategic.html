@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>0001 — Tactical vs Strategic Programming</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<main>
+<nav class="crumb"><a href="../MISSION.md">Mission</a> · Lesson 0001 · Next: <a href="0002-slice-work-for-ai.html">0002 Slice work for AI</a> · <a href="../reference/0001-strategic-checklist.html">Checklist</a></nav>
+<h1>Tactical vs strategic programming</h1>
+<p class="subtitle">One distinction that decides whether AI is your intern or your replacement. 15 min.</p>
+
+<h2>Knowledge (3 min)</h2>
+<p><strong>Tactical programming</strong> = get it working now, move on. <strong>Strategic programming</strong> = invest a little extra to keep complexity down for every future change — better interfaces, hidden details, written-down <em>why</em>.</p>
+<figure>
+<table>
+<tr><th></th><th>Tactical</th><th>Strategic</th></tr>
+<tr><td>Goal</td><td>close ticket fast</td><td>make next ticket cheap</td></tr>
+<tr><td>AI does well?</td><td>yes — codegen</td><td>no — needs your judgment</td></tr>
+<tr><td>Example</td><td>paste 3 special cases</td><td>one general function + test</td></tr>
+</table>
+<figcaption>Ousterhout's distinction: tactical programming is the enemy of good design because complexity compounds. (<a href="https://web.stanford.edu/~ouster/cgi-bin/aposd.php">Ousterhout, A Philosophy of Software Design</a>; discussion in <a href="https://newsletter.pragmaticengineer.com/p/the-philosophy-of-software-design">Pragmatic Engineer x Ousterhout</a>).</figcaption>
+</figure>
+
+<h2>Retrieval check (2 min)</h2>
+<div class="quiz" data-answer="b" data-why="strategic work hides complexity behind a clean interface.">
+<p><strong>Q1. Which task is strategic?</strong></p>
+<button data-opt="a">Churn boilerplate code quickly</button>
+<button data-opt="b">Design clean module boundary</button>
+<button data-opt="c">Copy-paste fix under pressure</button>
+<p class="fb" aria-live="polite"></p>
+</div>
+
+<h2>Skill task (8 min, in your repo)</h2>
+<div class="task">
+<ol>
+<li>Open your current JS/TS ticket. List 3 sub-tasks.</li>
+<li>Label each <em>T</em> (AI can do) or <em>S</em> (you must decide: interface, edge cases, what <em>not</em> to build).</li>
+<li>Rewrite one <em>S</em> item as a 2-sentence decision: "We will ___ so that ___. We won't ___."</li>
+</ol>
+Win: you have one strategic sentence AI cannot guess.
+</div>
+
+<p class="source"><strong>Primary source:</strong> Ousterhout Ch.1–3 (tactical vs strategic, deep modules) via <a href="https://web.stanford.edu/~ouster/cgi-bin/aposd.php">Stanford site</a>. Quick listen alternative: <a href="https://newsletter.pragmaticengineer.com/p/the-philosophy-of-software-design">Pragmatic Engineer episode</a>. Full list: <a href="../RESOURCES.md">RESOURCES.md</a>. Printable: <a href="../reference/0001-strategic-checklist.html">strategic checklist</a>.</p>
+<p class="ask">Unclear? Ask your agent-teacher a follow-up — e.g. "Is writing tests tactical or strategic?" — before Lesson 0002.</p>
+</main>
+<script src="../assets/quiz.js"></script>
+</body>
+</html>
