@@ -1,0 +1,5 @@
+Goal: Track 3 todos in memory.
+Input: add <text> or list
+Output: 1. <text>
+Rule: Keep up to 3 tasks in memory. Ignore empty.
+Not-doing: no file save, no done/delete, no UI

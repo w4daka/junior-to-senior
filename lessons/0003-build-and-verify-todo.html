@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>0003 — Build and verify your todo</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<main>
+<nav class="crumb"><a href="0002-spec-your-first-program.html">0002</a> · Lesson 0003 · <a href="../reference/0003-verify-checklist.html">Checklist</a> · <a href="../MISSION.md">Mission</a></nav>
+<h1>Build and verify your todo</h1>
+<p class="subtitle">Turn your spec into running code, then prove it. 20 min. Think-first: you draft, agent grills.</p>
+
+<h2>Knowledge (3 min)</h2>
+<p>Your <code>spec.txt</code> says: track 3 todos in memory, <code>add &lt;text&gt;</code> or <code>list</code>, print <code>1. &lt;text&gt;</code>, max 3 + ignore empty, no file/done/UI.</p>
+<p>Strategic loop: <strong>build → run → verify</strong>. Tactics writes code. Strategy proves rule + boundary hold. Same loop as <a href="https://www.pearson.com/en-us/subject-catalog/p/test-driven-development-by-example/P200000009421/9780321146533">Beck red-green-refactor</a>, shrunk: run two commands, check three boxes.</p>
+
+<h2>Retrieval check (2 min)</h2>
+<div class="quiz" data-answer="b" data-why="adding a 4th task tests the max-3 rule.">
+<p><strong>Q1. Which check proves your Rule holds?</strong></p>
+<button data-opt="a">List shows numbered output lines</button>
+<button data-opt="b">Fourth add is safely ignored</button>
+<button data-opt="c">No extra files are created</button>
+<p class="fb" aria-live="polite"></p>
+</div>
+
+<h2>Skill task (12 min, think-first)</h2>
+<div class="task">
+<ol>
+<li>Draft <code>todo.js</code> yourself first — 10 lines max. Hint only: read <code>process.argv</code>, keep <code>let todos = []</code>. No copy-paste yet.</li>
+<li>Paste draft here. Agent grills, never solves outright (your rule).</li>
+<li>After 2nd try you may ask "show me". Then run:<br><code>node todo.js add "buy milk"</code><br><code>node todo.js list</code></li>
+<li>Verify with <a href="../reference/0003-verify-checklist.html">3-box checklist</a>: add+list, 4th ignored, no file.</li>
+</ol>
+Win: <code>todo.js</code> prints <code>1. buy milk</code> and passes all 3 boxes.
+</div>
+
+<p class="source"><strong>Primary source:</strong> <a href="https://www.pearson.com/en-us/subject-catalog/p/test-driven-development-by-example/P200000009421/9780321146533">Beck, TDD By Example — run → check → fix</a>. Spec chain: <a href="https://cc.bruniaux.com/guide/workflows/spec-first">intent → spec → plan</a>. Prior: <a href="0002-spec-your-first-program.html">Lesson 0002</a>, <a href="../RESOURCES.md">RESOURCES.md</a>.</p>
+<p class="ask">Stuck? Ask your agent-teacher a follow-up — e.g. "Is my argv handling tight enough?" — paste code + terminal output.</p>
+</main>
+<script src="../assets/quiz.js"></script>
+</body>
+</html>
