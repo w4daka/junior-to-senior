@@ -12,7 +12,9 @@ if (cmd == "list" && !text) {
   if (todos.length < 3) {
     todos.push(text);
     fs.writeFileSync("todos.json", JSON.stringify(todos));
-    console.log("1. " + todos[0]);
+    let new_count = todos.length;
+    let new_text = text;
+    console.log(new_count + ". " + new_text);
   } else {
     console.log("error");
   }
