@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>0004 — Review AI code like senior</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<main>
+<nav class="crumb"><a href="0003-build-and-verify-todo.html">0003</a> · Lesson 0004 · <a href="../reference/0004-qa-checklist.html">Checklist</a> · <a href="../MISSION.md">Mission</a></nav>
+<h1>Review AI code like senior</h1>
+<p class="subtitle">Catch logic, edge, design flaws before merge. 20 min. Think-first: you find, agent grills.</p>
+
+<h2>Knowledge (3 min)</h2>
+<p>Lesson 0003 built <code>todo-file.js</code> that passes. Seniors still review: AI code looks right but hides off-by-one, empty, and copy-paste. Use <strong>L-E-D-N</strong> from <a href="../reference/0004-qa-checklist.html">checklist</a>: Logic, Edge, Design, Not-doing.</p>
+<figure>
+<p><strong>Suspect diff (AI-style):</strong><br><code>if(todos.length &lt;= 3){ todos.push(text); console.log("1. "+todos[0]); }</code><br>Two flaws hide here. Which checklist letters catch them?</p>
+<figcaption>Pattern from <a href="https://www.pearson.com/en-us/subject-catalog/p/test-driven-development-by-example/P200000009421/9780321146533">Beck fail → pass → clean</a>; design smell from <a href="https://web.stanford.edu/~ouster/cgi-bin/aposd.php">Ousterhout deep modules</a>.</figcaption>
+</figure>
+
+<h2>Retrieval check (2 min)</h2>
+<div class="quiz" data-answer="b" data-why="empty text is the edge case.">
+<p><strong>Q1. Which test is Edge, not Logic?</strong></p>
+<button data-opt="a">Add milk prints numbered item</button>
+<button data-opt="b">Empty add prints error message</button>
+<button data-opt="c">Print uses single format style</button>
+<p class="fb" aria-live="polite"></p>
+</div>
+
+<h2>Skill task (12 min, think-first)</h2>
+<div class="task">
+<ol>
+<li>Open your <code>todo-file.js</code> as if AI wrote it. Run <a href="../reference/0004-qa-checklist.html">L-E-D-N</a> alone, no fix yet.</li>
+<li>Write 3 found risks in your words, one per letter L/E/D. Example shape: "E: 4th add ___?"</li>
+<li>Paste review here. Agent grills, never rewrites (your rule).</li>
+<li>After 2nd try you may ask "show fix". Then post diff to <a href="https://www.reddit.com/r/code_review/">r/code_review</a> for wisdom (optional).</li>
+</ol>
+Win: 3 risks listed + 4 commands run proving each (<code>add / list / add "" / foo</code>).
+</div>
+
+<p class="source"><strong>Primary source:</strong> <a href="https://www.pearson.com/en-us/subject-catalog/p/test-driven-development-by-example/P200000009421/9780321146533">Beck, TDD By Example</a>. Prior: <a href="0003-build-and-verify-todo.html">Lesson 0003</a>, <a href="../RESOURCES.md">RESOURCES.md</a>.</p>
+<p class="ask">Stuck? Ask your agent-teacher — e.g. "Is this Logic or Edge?" — paste snippet + checklist letter.</p>
+</main>
+<script src="../assets/quiz.js"></script>
+</body>
+</html>
