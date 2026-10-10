@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mini-verify checklist — Reference</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<main>
+<nav class="crumb"><a href="../lessons/0003-build-and-verify-todo.html">Lesson 0003</a> · Reference</nav>
+<h1>Mini-verify checklist</h1>
+<p class="subtitle">Run these 3 after any build. All must pass.</p>
+<pre>1. add + list works
+   node todo.js add "buy milk" → node todo.js list → 1. buy milk
+2. rule holds
+   4th add ignored, empty add ignored
+3. not-doing holds
+   no file created, no done/delete, no UI</pre>
+<p class="source">Verify loop from <a href="https://www.pearson.com/en-us/subject-catalog/p/test-driven-development-by-example/P200000009421/9780321146533">Beck: run → check → fix</a>. Full spec chain <a href="https://cc.bruniaux.com/guide/workflows/spec-first">intent → spec → plan</a>.</p>
+</main>
+</body>
+</html>
