@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QA checklist for AI diffs — Reference</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<main>
+<nav class="crumb"><a href="../lessons/0004-review-ai-code.html">Lesson 0004</a> · Reference</nav>
+<h1>QA checklist for AI diffs</h1>
+<p class="subtitle">Run on every AI diff before merge. Stop at first fail.</p>
+<pre>L — Logic: does happy path print spec output?
+    try: add milk → 1. milk
+E — Edge: empty? 4th? unknown cmd? missing file?
+    try: add "" → error, 4th add → error, foo → error
+D — Design: one place for rule? no copy-paste?
+    ask: max-3 in one if? print in one format?
+N — Not-doing: no extra file/UI/done?
+    check: ls, no new deps</pre>
+<p class="source">Loop from <a href="https://www.pearson.com/en-us/subject-catalog/p/test-driven-development-by-example/P200000009421/9780321146533">Beck: fail → pass → clean</a>. Post real diffs to <a href="https://www.reddit.com/r/code_review/">r/code_review</a> for wisdom.</p>
+</main>
+</body>
+</html>
